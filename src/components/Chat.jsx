@@ -49,13 +49,6 @@ function Chat({ users, messages, userName, date, roomId, onAddMessage }) {
         <div className="messages" ref={messagesRef}>
           {messages.map((message, index) => (
             <Message message={message} key={index} />
-            // <div className="message">
-            //   <p className="message-text">{message.text}</p>
-            //   <div>
-            //     <span className="message-name">{message.userName} | </span>
-            //     <span className="message-name">{message.date}</span>
-            //   </div>
-            // </div>
           ))}
         </div>
         <form>
